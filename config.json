@@ -1,0 +1,21 @@
+{
+  "seed": 785078,
+  "run_date": "2026-09-09",
+  "n_patients": 8000,
+  "n_appointments": 60000,
+  "paths": {
+    "database": "data/clinica.db",
+    "rates_csv": "data/tarifas_especialidad.csv",
+    "clinics_json": "data/catalogo_clinicas.json",
+    "data_profile": "data/data_profile.json",
+    "etl_log": "data/etl.log"
+  },
+  "tables": {
+    "patients": "patients",
+    "appointments": "appointments",
+    "curated": "appointments_curated",
+    "rejects": "appointments_rejects",
+    "etl_runs": "etl_runs"
+  },
+  "max_reject_pct": 0.10
+}

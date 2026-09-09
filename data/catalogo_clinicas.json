@@ -1,0 +1,94 @@
+{
+  "clinicas": [
+    {
+      "clinic_code": "CL01",
+      "nombre": "SaludNorte Centro",
+      "ciudad": "Monterrey",
+      "zona": "norte",
+      "aliases": [
+        "CL-01",
+        "cl01",
+        "Clinica Centro"
+      ]
+    },
+    {
+      "clinic_code": "CL02",
+      "nombre": "SaludNorte San Nicolás",
+      "ciudad": "San Nicolás",
+      "zona": "norte",
+      "aliases": [
+        "CL-02",
+        "cl02",
+        "Clinica San Nicolas"
+      ]
+    },
+    {
+      "clinic_code": "CL03",
+      "nombre": "SaludNorte Guadalupe",
+      "ciudad": "Guadalupe",
+      "zona": "oriente",
+      "aliases": [
+        "CL-03",
+        "cl03",
+        "Clinica Guadalupe"
+      ]
+    },
+    {
+      "clinic_code": "CL04",
+      "nombre": "SaludNorte Apodaca",
+      "ciudad": "Apodaca",
+      "zona": "noreste",
+      "aliases": [
+        "CL-04",
+        "cl04",
+        "Clinica Apodaca"
+      ]
+    },
+    {
+      "clinic_code": "CL05",
+      "nombre": "SaludNorte Santa Catarina",
+      "ciudad": "Santa Catarina",
+      "zona": "poniente",
+      "aliases": [
+        "CL-05",
+        "cl05",
+        "Clinica Santa Catarina"
+      ]
+    }
+  ],
+  "especialidad_aliases": {
+    "Medicina General": [
+      "med gral",
+      "MEDICINA_GENERAL",
+      "medicina general "
+    ],
+    "Pediatría": [
+      "pediatria",
+      "PEDIATRIA"
+    ],
+    "Traumatología": [
+      "traumatologia",
+      "TRAUMA"
+    ],
+    "Cardiología": [
+      "cardiologia",
+      "CARDIO"
+    ],
+    "Dermatología": [
+      "dermatologia",
+      "DERMA"
+    ],
+    "Ginecología": [
+      "ginecologia",
+      "GINE"
+    ],
+    "Odontología": [
+      "odontologia",
+      "ODONTO"
+    ],
+    "Oftalmología": [
+      "oftalmologia",
+      "OFTALMO"
+    ]
+  }
+}
