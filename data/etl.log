@@ -20,3 +20,7 @@
 2026-09-08 23:50:53,379 | INFO | Run 0294aa56-4acb-424c-adbd-dff8f3da53c2 exitoso: leídas=61200 cargadas=56100 rechazadas=5100 rechazo=8.33%
 2026-09-08 23:55:36,702 | INFO | Run faec1981-8874-4dc7-a654-ef7397d52b23 iniciado con watermark 1900-01-01 00:00:00
 2026-09-08 23:55:38,046 | INFO | Run faec1981-8874-4dc7-a654-ef7397d52b23 exitoso: leídas=61200 cargadas=56100 rechazadas=5100 rechazo=8.33%
+2026-09-09 00:01:59,616 | INFO | Run 5bfd8d06-98af-4834-8473-c9895d523237 iniciado con watermark 1900-01-01 00:00:00
+2026-09-09 00:02:00,903 | INFO | Run 5bfd8d06-98af-4834-8473-c9895d523237 exitoso: leídas=61200 cargadas=56100 rechazadas=5100 rechazo=8.33%
+2026-09-09 00:02:27,728 | INFO | Run e067e5b7-0699-4855-b5e1-4fce99a85773 iniciado con watermark 1900-01-01 00:00:00
+2026-09-09 00:02:29,027 | INFO | Run e067e5b7-0699-4855-b5e1-4fce99a85773 exitoso: leídas=61200 cargadas=56100 rechazadas=5100 rechazo=8.33%

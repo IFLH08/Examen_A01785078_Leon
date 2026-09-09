@@ -1,6 +1,5 @@
 {
   "seed": 785078,
-  "run_date": "2026-09-09",
   "n_patients": 8000,
   "n_appointments": 60000,
   "paths": {
