@@ -14,12 +14,13 @@ from generate_data import build_appointments, inject_defects, normalize
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config.json"
-N = 2500
 
 
 def main():  # Agrega un lote nuevo sin modificar las filas existentes
     with CONFIG.open(encoding="utf-8") as file:
         config = json.load(file)
+
+    batch_size = config["incremental_batch_size"]
 
     rng = np.random.default_rng(config["seed"])
     database = ROOT / config["paths"]["database"]
@@ -39,7 +40,16 @@ def main():  # Agrega un lote nuevo sin modificar las filas existentes
     last_id = existing["appointment_id"].str[1:].astype(int).max()
     last_created = pd.to_datetime(existing["created_at"], errors="coerce").max()
     weights = normalize(rng.lognormal(0, 1.1, len(patients)))
-    clean_batch = build_appointments(rng, N, patients, weights, rates, last_id + 1, "2025-12-01", "2025-12-31")
+    clean_batch = build_appointments(
+        rng,
+        batch_size,
+        patients,
+        weights,
+        rates,
+        last_id + 1,
+        "2025-12-01",
+        "2025-12-31",
+    )
 
     scheduled = pd.to_datetime(clean_batch["scheduled_at"])
     available_days = (np.ceil((scheduled - last_created).dt.total_seconds() / 86400).astype(int) - 1).clip(lower=1, upper=44)

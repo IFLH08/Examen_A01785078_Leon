@@ -1,0 +1,5 @@
+rows,repetitions,pandas_median_seconds,spark_median_seconds,spark_startup_seconds,patient_top_30_pct,group_max_to_median_ratio,spark_status
+60000,3,0.19559839999419637,,,73.67,3.343,RuntimeError: PySpark 4.2 requiere Java 17 o posterior; se detectó Java 8
+250000,3,0.8279199000098743,,,71.95,3.046,RuntimeError: PySpark 4.2 requiere Java 17 o posterior; se detectó Java 8
+1000000,3,3.3192583000054583,,,71.58,3.058,RuntimeError: PySpark 4.2 requiere Java 17 o posterior; se detectó Java 8
+4000000,3,14.486718900006963,,,71.48,3.015,RuntimeError: PySpark 4.2 requiere Java 17 o posterior; se detectó Java 8

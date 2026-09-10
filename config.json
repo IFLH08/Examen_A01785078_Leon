@@ -1,7 +1,9 @@
 {
   "seed": 785078,
+  "run_date": "2026-09-10",
   "n_patients": 8000,
   "n_appointments": 60000,
+  "incremental_batch_size": 2500,
   "paths": {
     "database": "data/clinica.db",
     "rates_csv": "data/tarifas_especialidad.csv",
@@ -16,5 +18,19 @@
     "rejects": "appointments_rejects",
     "etl_runs": "etl_runs"
   },
-  "max_reject_pct": 0.10
+  "max_reject_pct": 0.10,
+  "validation": {
+    "max_amount_charged": 3520.0,
+    "max_patient_age": 120,
+    "allowed_durations": [15, 20, 30, 45, 60],
+    "allowed_statuses": ["completada", "no_show", "cancelada"],
+    "allowed_payment_methods": ["efectivo", "tarjeta", "transferencia", "aseguradora"]
+  },
+  "benchmark": {
+    "volumes": [60000, 250000, 1000000, 4000000],
+    "repetitions": 3,
+    "results_csv": "docs/benchmark_results.csv",
+    "chart_png": "docs/benchmark_times.png",
+    "spark_explain": "docs/spark_explain.txt"
+  }
 }

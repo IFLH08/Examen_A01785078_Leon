@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Fuentes, salidas y logs reproducibles generados por los scripts.
+data/*
+!data/.gitkeep
+
+# Artefactos temporales de pruebas, auditoría y benchmark.
+.pytest_cache/
+.audit_baseline/
+data/benchmark_tmp*
+spark-warehouse/
+metastore_db/
+derby.log
+hs_err_pid*.log
+replay_pid*.log

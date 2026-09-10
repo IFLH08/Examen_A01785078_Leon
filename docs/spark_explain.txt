@@ -1,0 +1,1 @@
+RuntimeError: PySpark 4.2 requiere Java 17 o posterior; se detectó Java 8
